@@ -30,7 +30,7 @@ instance PC_Hero (NPC_DEFAULT)
 	
 	Mdl_SetVisual (self,"HUMANS.MDS");
 	// ------ Visual ------ "body_Mesh",		bodyTex			SkinColor	headMesh,			faceTex,		teethTex,	armorInstance	
-	Mdl_SetVisualBody (self, "hum_body_Naked0", 9,				0,			"Hum_Head_Pony", 	Face_N_Normal04,	0, 			NO_ARMOR);
+	Mdl_SetVisualBody (self, "hum_body_Naked0",  8,				0,			"Hum_Head_Pony", 	Face_N_Normal04,	0, 			NO_ARMOR	);
 	
 	// ------ Kampf-Talente ------
 	B_SetFightSkills 	(self, 10); 
