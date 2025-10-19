@@ -1,10 +1,9 @@
-
-instance PIR_66001_Gregorius (Npc_Default)
+instance BAU_66901_Boris (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Gregorius";
-	guild 		= GIL_NONE;//Joly:kein GIL_PIR, sonst "Chaos in the City"
-	id 			= 66001;
+	name 		= "Boris";
+	guild 		= GIL_BAU;//Joly:kein GIL_PIR, sonst "Chaos in the City"
+	id 			= 66901;
 	voice 		= 1;
 	flags       = NPC_FLAG_IMMORTAL;																		//NPC_FLAG_IMMORTAL oder 0
 	npctype		= NPCTYPE_MAIN;
@@ -22,7 +21,7 @@ instance PIR_66001_Gregorius (Npc_Default)
 	fight_tactic		= FAI_HUMAN_MASTER;	// MASTER / STRONG / COWARD
 	
 	// ------ Equippte Waffen ------																	//Munition wird automatisch generiert, darf aber angegeben werden
-	EquipItem			(self, ItMw_Nagelknueppel);
+	EquipItem			(self,  ItMw_1h_Bau_Axe);
 	//EquipItem			(self, ItRw_Bow_H_01);	
 	
 	// ------ Inventory ------
@@ -30,7 +29,7 @@ instance PIR_66001_Gregorius (Npc_Default)
 
 		
 	// ------ visuals ------																			//Muss NACH Attributen kommen, weil in B_SetNpcVisual die Breite abh. v. STR skaliert wird
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Thief", Face_P_Greg, BodyTex_P, ITAR_PIR_L_Addon);		
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Thief", Face_N_Cipher_neu, BodyTex_P, ITAR_BAU_M);		
 	Mdl_SetModelFatness	(self, 1);
 	Mdl_ApplyOverlayMds	(self, "Humans_Relaxed.mds"); // Tired / Militia / Mage / Arrogance / Relaxed
 	
@@ -40,13 +39,8 @@ instance PIR_66001_Gregorius (Npc_Default)
 	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
 	B_SetFightSkills (self, 80); //Grenzen für Talent-Level liegen bei 30 und 60
 
-	// ------ TA anmelden ------
-	daily_routine 		= Rtn_Start_Gregorius_66001;
+
 };
 
-FUNC VOID Rtn_Start_Gregorius_66001 ()
-{
-	TA_Stand_ArmsCrossed (08,00,22,00,"WP_CAMP_FARM_GREG_01");
-    TA_Stand_ArmsCrossed (22,00,08,00,"WP_CAMP_FARM_GREG_01");		
-};
+
 

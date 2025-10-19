@@ -7,7 +7,7 @@
 // *******************************************************************
 
 // *********
-// GLOBAL
+// GLOBAL 
 // *********
 
 func void STARTUP_GLOBAL()
@@ -3425,40 +3425,6 @@ FUNC VOID STARTUP_NewWorld_Part_GreatPeasant_01 ()
 	Wld_InsertNpc 	(SLD_826_Soeldner, 	"BIGFARM");
 
 
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_01");
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_01");
-	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP1_01");
-
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_02");
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_02");
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_02");
-
-	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP1_03");
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_03");
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_03");
-
-	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_12");
-	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_13");
-	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_14");
-
-	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_07");
-	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_08");
-	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_09");
-
-	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP2_02");
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP2_02");
-
-	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP2_03");
-	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP2_03");
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP2_03");
-
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP2_04");
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP2_04");
-
-
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_KITCHEN_OUT_02");
-	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_KITCHEN_OUT_02");
-	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_KITCHEN_OUT_02");
 
 	
 	//Farm3
@@ -3477,11 +3443,6 @@ FUNC VOID STARTUP_NewWorld_Part_GreatPeasant_01 ()
 	Wld_InsertNpc 	(BAU_967_Bauer, 		"BIGFARM");
 	Wld_InsertNpc 	(BAU_968_Bauer, 		"BIGFARM");
 	Wld_InsertNpc 	(BAU_969_Bauer, 		"BIGFARM");
-	
-	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_FARM3_OUT_05_01");
-	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_FARM3_OUT_05_02");
-	Wld_InsertNpc 	(Hammel, 		"FP_ROAM_NW_FARM3_OUT_05_03");
-	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_FARM3_OUT_05_04");
 
 	
 	//Farm4
@@ -4806,7 +4767,54 @@ FUNC VOID INIT_AddonWorld ()
 func void STARTUP_PROLOG ()
 {
 
-Wld_InsertNpc 	(PIR_66001_Gregorius, 	"WP_CAMP_FARM_GREG_01");
+// Onars Hof 
+
+	Wld_InsertNpc 	(PIR_66001_Gregorius, 	"WP_CAMP_FARM_GREG_01");
+	Wld_InsertNpc 	(BAU_66901_Boris, 	"WP_PR_FARM_BORIS");
+
+// Schafe 
+
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_01");
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_01");
+	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP1_01");
+
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_02");
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_02");
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_02");
+
+	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP1_03");
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_03");
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP1_03");
+
+	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_12");
+	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_13");
+	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_14");
+
+	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_07");
+	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_08");
+	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_BIGFARM_SHEEP2_09");
+
+	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP2_02");
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP2_02");
+
+	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP2_03");
+	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_SHEEP2_03");
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP2_03");
+
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP2_04");
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_SHEEP2_04");
+
+
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_KITCHEN_OUT_02");
+	Wld_InsertNpc 	(Sheep, 		"NW_BIGFARM_KITCHEN_OUT_02");
+	Wld_InsertNpc 	(Hammel, 		"NW_BIGFARM_KITCHEN_OUT_02");
+	
+	
+	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_FARM3_OUT_05_01");
+	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_FARM3_OUT_05_02");
+	Wld_InsertNpc 	(Hammel, 		"FP_ROAM_NW_FARM3_OUT_05_03");
+	Wld_InsertNpc 	(Sheep, 		"FP_ROAM_NW_FARM3_OUT_05_04");
+
 
 // Monster 
 
