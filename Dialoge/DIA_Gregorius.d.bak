@@ -1,0 +1,26 @@
+// ************************************************************
+// 			  	TestHello
+// ************************************************************
+
+Instance DIA_Gregorius_TestHello (C_INFO)
+{
+	npc = PIR_66001_Gregorius;
+	nr = 1;
+	condition = DIA_Gregorius_TestHello_Condition;
+	information = DIA_Gregorius_TestHello_Info;
+	description = "";
+	important = TRUE;
+	permanent	= FALSE;
+};
+
+Func int DIA_Gregorius_TestHello_Condition()
+{
+	return TRUE;
+};
+
+Func void DIA_Gregorius_TestHello_Info()
+{
+	AI_Output (other, self, "DIA_Gregorius_TestHello_15_0"); // Hello
+	AI_Output (self, other, "DIA_Gregorius_TestHello_1_1"); // Hi
+};
+
